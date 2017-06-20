@@ -24,9 +24,7 @@ const validateToken = token => {
   try {
     const error = validateNumber(token);
     if (error) throw error;
-
     log(`Tenemos un token válido: ${token}`);
-
   }
   catch (e) {
     log(`Algo salió terriblemente mal: ${e}`);
